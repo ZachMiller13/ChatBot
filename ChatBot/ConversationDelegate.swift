@@ -9,6 +9,10 @@ struct ConversationDelegate {
             return "In the cookie jar!"
         } else if lowerQuestion.hasPrefix("where") {
             return "To the North!"
+        } else if lowerQuestion.contains("old are you") {
+            return "How rude of you to ask my age!"
+        } else if lowerQuestion.contains("your name") {
+            return "My name is Chatty Kathy."
         } else {
             let defaultNumber = question.count % 3
             
